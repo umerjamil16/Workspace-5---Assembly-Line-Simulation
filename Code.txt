@@ -1,0 +1,144 @@
+Dim Part As CadObject
+
+Dim CartPos As New RCSCartPos
+
+Dim rRobot As Robot
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub MovePart()
+
+CartPos.px = -2800
+
+CartPos.py = -197
+
+CartPos.pz = 490
+
+Set Part = ThisDocument.CadObject("box1")
+
+Part.SetObjectNextTarget CartPos
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub movepart1()
+
+CartPos.px = -769
+
+CartPos.py = 663
+
+CartPos.pz = 490
+
+Set Part = ThisDocument.CadObject("box1")
+
+Part.SetObjectNextTarget CartPos
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub movepart2()
+
+CartPos.px = 1237
+
+CartPos.py = 673
+
+CartPos.pz = 490
+
+Set Part = ThisDocument.CadObject("box2")
+
+Part.SetObjectNextTarget CartPos
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub del2()
+
+ThisDocument.CadObject("box2").Delete
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub del1()
+
+ThisDocument.CadObject("box1").Delete
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub bigger()
+
+ThisDocument.Box "box3", 100, 100, 100
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub movepart3()
+
+CartPos.px = 0
+
+CartPos.py = 1434
+
+CartPos.pz = 490
+
+Set Part = ThisDocument.CadObject("box3")
+
+Part.SetObjectNextTarget CartPos
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub movepart4()
+
+CartPos.px = 0
+
+CartPos.py = 3522
+
+CartPos.pz = 490
+
+Set Part = ThisDocument.CadObject("box3")
+
+Part.SetObjectNextTarget CartPos
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub movepart5()
+
+CartPos.px = -2785
+
+CartPos.py = 4333
+
+CartPos.pz = 490
+
+Set Part = ThisDocument.CadObject("box3")
+
+Part.SetObjectNextTarget CartPos
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Public Sub movepart6()
+
+CartPos.px = 2019
+
+CartPos.py = 6671
+
+CartPos.pz = 482
+
+Set Part = ThisDocument.CadObject("box3")
+
+Part.SetObjectNextTarget CartPos
+
+End Sub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
